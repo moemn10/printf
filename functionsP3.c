@@ -2,7 +2,7 @@
 
 /* *PRINT POINTER* */
 /**
- * print_pointer - Printing the value of a pointer variable
+ * print_pt - Printing the value of a pointer variable
  * @types: Listing an arguments
  * @buffer: Buffer an array to handle print
  * @flags:  Calculating active flags
@@ -11,7 +11,7 @@
  * @size: Size of specifier
  * Return: Number of characters printed.
  */
-int print_pointer(va_list types, char buffer[],
+int print_pt(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	char ex = 0, p = ' ';
@@ -51,7 +51,6 @@ int print_pointer(va_list types, char buffer[],
 		width, flags, D, ex, ps));
 }
 
-/* *PRINT NON PRINTABLE* */
 /**
  * print_non_printable - Printing ascii codes in hexa of non printable chars
  * @types: Listing an arguments
@@ -93,7 +92,7 @@ int print_non_printable(va_list types, char buffer[],
 
 /* *PRINT REVERSE* */
 /**
- * print_reverse - Printing reverse string.
+ * print_rev - Printing reverse string.
  * @types: Listing an arguments
  * @buffer: Buffering an array to handle print
  * @flags:  Calculating active flags
@@ -103,7 +102,7 @@ int print_non_printable(va_list types, char buffer[],
  * Return: Numbers of charcters printed
  */
 
-int print_reverse(va_list types, char buffer[],
+int print_rev(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	char *str;
@@ -136,7 +135,7 @@ int print_reverse(va_list types, char buffer[],
 }
 /* *PRINT A STRING IN ROT13* */
 /**
- * print_rot13string - Printing a string in rot13.
+ * print_rot13 - Printing a string in rot13.
  * @types: Listing an arguments
  * @buffer: Buffering an array to handle print
  * @flags:  Calculating active flags
@@ -145,7 +144,7 @@ int print_reverse(va_list types, char buffer[],
  * @size: Size of specifier
  * Return: Numbers of charcter printed
  */
-int print_rot13string(va_list types, char buffer[],
+int print_rot13(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	char z;
