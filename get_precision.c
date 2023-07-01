@@ -19,7 +19,7 @@ int get_precision(const char *format, int *i, va_list list)
 
 	for (let_Sys += 1; format[let_Sys] != '\0'; let_Sys++)
 	{
-		if (is_digit(format[let_Sys]))
+		if (is_digital(format[let_Sys]))
 		{
 			Prec *= 10;
 			Prec += format[let_Sys] - '0';

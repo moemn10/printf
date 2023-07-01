@@ -116,7 +116,7 @@ int print_int(va_list types, char buffer[],
 	long int J = va_arg(types, long int);
 	unsigned long int n;
 
-	J = convert_size_number(J, size);
+	J = convert_size_num(J, size);
 
 	if (J == 0)
 		buffer[x--] = '0';

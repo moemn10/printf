@@ -17,7 +17,7 @@ int print_unsigned(va_list types, char buffer[],
 	int x = BUFF_SIZE - 2;
 	unsigned long int n = va_arg(types, unsigned long int);
 
-	n = convert_size_unsgnd(n, size);
+	n = convert_size_unsigned(n, size);
 
 	if (n == 0)
 		buffer[x--] = '0';
@@ -56,7 +56,7 @@ int print_octal(va_list types, char buffer[],
 
 	UNUSED(width);
 
-	n = convert_size_unsgnd(n, size);
+	n = convert_size_unsigned(n, size);
 
 	if (n == 0)
 		buffer[x--] = '0';
@@ -136,7 +136,7 @@ int print_hexa(va_list types, char map_to[], char buffer[],
 
 	UNUSED(width);
 
-	n = convert_size_unsgnd(n, size);
+	n = convert_size_unsigned(n, size);
 
 	if (n == 0)
 		buffer[x--] = '0';
