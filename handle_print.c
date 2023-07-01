@@ -1,32 +1,32 @@
 #include "main.h"
 /**
- * Handle_Print - Prints an arg.
- * @Format: Format string in which to print the args.
- * @List: List of args to be print..
- * @Ind: Ind.
+ * handle_print - Prints an arg
+ * @fmt: Format string in which to print the args.
+ * @list: List of args to be print.
+ * @ind: Ind.
  * @buffer: Buffer Arr To Handle Print.
- * @Flags: Calculat Active Flags.
- * @Width: Get Width.
+ * @flags: Calculat Active Flags
+ * @width: Get Width
  * @precision: Precision Specification.
- * @Size: Size Specifier.
+ * @size: Size Specifier
  * Return: 1 Or 2.
  */
 int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int let_Sys, len = 0, db_Chars = -1;
-	fmt_t format_data[] = {
+	fmt_t fm_data[] = {
 		{'c', print_char}, {'s', print_string}, {'%', print_percent},
 		{'i', print_int}, {'d', print_int}, {'b', print_binary},
 		{'u', print_unsigned}, {'o', print_octal}, {'x', print_hexadecimal},
 		{'X', print_hexa_upper}, {'p', print_pt}, {'S', print_non_printable},
 		{'r', print_rev}, {'R', print_rot13}, {'\0', NULL}
 	};
-	for (let_Sys = 0; format_data[let_Sys].fmt != '\0'; let_Sys++)
-		if (fmt[*ind] == format_data[let_Sys].fmt)
-			return (format_data[let_Sys].fn(list, buffer, flags, width, precision, size));
+	for (let_Sys = 0; fm_data[let_Sys].fmt != '\0'; let_Sys++)
+		if (fmt[*ind] == fm_data[let_Sys].fmt)
+			return (fm_data[let_Sys].fn(list, buffer, flags, width, precision, size));
 
-	if (format_data[let_Sys].fmt == '\0')
+	if (fm_data[let_Sys].fmt == '\0')
 	{
 		if (fmt[*ind] == '\0')
 			return (-1);

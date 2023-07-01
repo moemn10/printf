@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * Get_size - Calculat the size arg.
- * @Format: Format strings in which to print the arg.
+ * get_size - Calculat the size arg.
+ * @format: Format strings in which to print the arg.
  * @i: List of arg to be print.
  * Return: len..
  */

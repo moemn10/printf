@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * Get_Flags - calc flags.
- * @ForaT: Formating Strings print the arguments.
+ * get_flags - calc flags.
+ * @format: Formating Strings print the arguments.
+ * @i: List of args to be print.
  * Return: Fl.
  */
 int get_flags(const char *format, int *i)
