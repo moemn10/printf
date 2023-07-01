@@ -17,7 +17,7 @@ int can_printable(char ch)
 /**
  * append_hexa - Append ascci in hexadecimal code to buffer
  * @buffer: An array of chars.
- * @i: Index at which to start appending.
+ * @x: Index at which to start appending.
  * @ascii_code: ASSCI code.
  * Return: Always 3
  */

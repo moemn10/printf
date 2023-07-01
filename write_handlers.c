@@ -5,10 +5,10 @@
  * handle_write_char - Print a strings.
  * @c: Char Types.
  * @buffer: Buffer Arr To handle print.
- * @Flags:  Calculat active Flags.
- * @Width: Get Width.
- * @Precision: Precision Specifier.
- * @Size: Size Specifier.
+ * @flags:  Calculat active Flags.
+ * @width: Get Width.
+ * @precision: Precision Specifier.
+ * @size: Size Specifier.
  * Return: Number of Chars printed.
  */
 int handle_write_char(char c, char buffer[],
@@ -45,14 +45,14 @@ int handle_write_char(char c, char buffer[],
 
 /************************* WRITE NUMBER *************************/
 /**
- * Write_number - Print a String.
- * @is_Negative: List of args.
+ * write_number - Print a String.
+ * @is_negative: List of args.
  * @ind: char Types.
  * @buffer: Buffer Arr to handle print
  * @flags:  Calculat the Flags.
  * @width: Get width.
- * @Precision: precision specifier
- * @Size: Size Specifier
+ * @precision: precision specifier
+ * @size: Size Specifier
  * Return: Number of Chars print.
  */
 int write_number(int is_negative, int ind, char buffer[],
@@ -80,16 +80,16 @@ int write_number(int is_negative, int ind, char buffer[],
  * write_num - Write A Number with buffer.
  * @ind: the number start on the buffer.
  * @buffer: Buffer.
- * @Flags: Flags.
- * @Width: Width.
- * @Prec: Precision Specifier.
- * @Length: Num length.
+ * @flags: Flags.
+ * @width: Width.
+ * @precision: Precision Specifier.
+ * @length: Num length.
  * @padd: Pading Char.
  * @extra_c: Extra Char.
  * Return: print number on the char.
  */
 int write_num(int ind, char buffer[],
-	int flags, int width, int prec,
+	int flags, int width, int precision,
 	int length, char padd, char extra_c)
 {
 	int db, pading = 1;
@@ -191,12 +191,12 @@ int write_unsgnd(int is_negative, int ind,
 }
 
 /**
- * Write_pointer - Write Memory Address.
+ * write_pointer - Write Memory Address.
  * @buffer: Arr of chars.
  * @ind: the number start in the buffer
  * @length: Length of num.
- * @Width: Width Specifier.
- * @Flags: Flags Specifier.
+ * @width: Width Specifier.
+ * @flags: Flags Specifier.
  * @padd: Char Representing the padding.
  * @extra_c: Char representing extra char.
  * @padd_start: which padding should start.

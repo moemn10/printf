@@ -15,7 +15,7 @@ int print_pt(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	char ex = 0, p = ' ';
-	int D = BUFF_SIZE - 2, l = 2, ps = 1; 
+	int D = BUFF_SIZE - 2, l = 2, ps = 1;
 	unsigned long na;
 	char map_to[] = "0123456789abcdef";
 	void *ad = va_arg(types, void *);

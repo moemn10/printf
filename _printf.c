@@ -52,7 +52,7 @@ int _printf(const char *format, ...)
 }
 
 /**
- * print_buffer - Printing the contents of the buffer 
+ * print_buffer - Printing the contents of the buffer
  * @buffer: Array of charcter
  * @buff_ind: Index at which to add next after char, represents the length.
  */
